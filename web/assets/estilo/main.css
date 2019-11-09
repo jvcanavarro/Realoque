@@ -1,0 +1,20 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    overflow-x: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.outter{
+
+    width: 100vw;
+
+}
+
+.inner{
+    display: block;
+    width: 70%;
+    margin: 0 auto 0 auto;
+
+}
+
