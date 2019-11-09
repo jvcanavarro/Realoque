@@ -1,0 +1,14 @@
+h2{
+    color: gray;
+    font-weight: lighter;
+    font-size: 24pt;
+}
+
+.sample h3{
+    margin-top: -10px;
+}
+
+.sample span{
+    display: block;
+    margin-top: 15px;
+}

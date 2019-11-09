@@ -34,4 +34,10 @@ class Alugue extends CI_Controller
 
 	}
 
+	public function sample(){
+
+		$this->render('sample', []);
+
+	}
+
 }

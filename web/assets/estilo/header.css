@@ -19,3 +19,24 @@ header h3{
     font-weight: bolder;
     vertical-align: middle;
 }
+
+header .right{
+    display: block;
+    float: right;
+    margin-top: -60px;
+}
+
+header button{
+
+    color: white;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+
+}
+
+.login{
+    border: 2px solid white;    
+}

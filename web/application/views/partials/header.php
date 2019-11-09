@@ -7,6 +7,7 @@
 	<title>Alugue</title>
 	<link rel="stylesheet" href="<?php echo base_url('assets/estilo/main.css')?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/estilo/header.css')?>">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 </head>
 <body>
@@ -16,11 +17,13 @@
 			<div class="inner">
 				<div class="left">
 
-					<h1>Alugue</h1>
+					<h1>Realoque</h1>
 					<h3>Slogan maneiro</h3>
 
 				</div>
 				<div class="right">
+					<button class ='login'>Login</button>
+					<button class ='cas'>Cadastre-se</button>
 				</div>
 			</div>
 		</div>

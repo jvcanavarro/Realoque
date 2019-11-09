@@ -1,0 +1,23 @@
+.search-containner{
+
+    display: block;
+    margin: 0 auto 0 auto;
+    
+}
+
+.home h2{
+
+    color: gray;
+    font-weight: lighter;
+    margin-top: 50px;
+
+}
+
+select{
+
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+
+
+}
