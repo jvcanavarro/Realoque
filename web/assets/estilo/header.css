@@ -1,0 +1,21 @@
+header{
+    background-color: #4196e1;
+    color: white;
+    margin-top: -20px;
+    padding-top: 20px;
+}
+
+header h1{
+    display: inline-block;
+    font-weight: lighter;
+    vertical-align: middle;
+    border-right: 1px solid white;
+    padding-right: 10px;
+}
+
+header h3{
+    display: inline-block;
+    font-size: 11pt;
+    font-weight: bolder;
+    vertical-align: middle;
+}
