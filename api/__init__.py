@@ -9,8 +9,7 @@ import pandas as pd
 
 app = Flask(__name__)
 CORS(app)
-data = pd.read_csv('D:/igor/OneDrive/Documentos/GitHub/serpro/HackSerpro/datasets/imoveis/imoveis_final_bairro_merged'
-                   '.csv',sep=";", encoding="unicode_escape")
+
 engine = create_engine('postgresql://equipe215:ZXF1aXBlMjE1QHNlcnBybw@bd.inova.serpro.gov.br:5432/equipe215')
 
 with engine.connect() as connection:
@@ -26,7 +25,7 @@ def get_bairros():
     :return:
     """
     with engine.connect() as connection:
-        response = connection.execute("SELECT DISTINCT x.\"Bairro\" FROM imoveis x ORDER BY x.\"Bairro\";")
+        response = connection.execute("SELECT DISTINCT x.\"bairro\" FROM imoveis x ORDER BY x.\"bairro\";")
 
     connection.close()
 
@@ -42,7 +41,7 @@ def getBy_bairro(bairro):
     """
     
     with engine.connect() as connection:
-        response = connection.execute("SELECT x.* FROM imoveis x WHERE x.\"Bairro\" = 'CENTRO';").fetchall()
+        response = connection.execute(f"SELECT x.* FROM imoveis x WHERE x.\"bairro\" = '{bairro}';").fetchall()
         response = [{columns[i]: line[i] for i in range(len(line))} for line in response]
 
     return jsonify(response)
