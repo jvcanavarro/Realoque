@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * Class Auth
  */
 
-class Alugue extends CI_Controller
+class Realoque extends CI_Controller
 {
 
 
@@ -37,6 +37,15 @@ class Alugue extends CI_Controller
 	public function sample(){
 
 		$this->render('sample', []);
+
+	}
+
+	public function lista(){
+
+		$data['bairro'] = $this->uri->segment(2);
+
+		$this->render('lista', $data);
+		
 
 	}
 
