@@ -10,6 +10,8 @@ import pandas as pd
 app = Flask(__name__)
 CORS(app)
 
+
+
 engine = create_engine('postgresql://equipe215:ZXF1aXBlMjE1QHNlcnBybw@bd.inova.serpro.gov.br:5432/equipe215')
 
 with engine.connect() as connection:
@@ -76,6 +78,22 @@ def getBy_valor(valor):
         response = [{columns[i]: line[i] for i in range(len(line))} for line in response]
 
     return jsonify(response)
+
+@app.route("/index/<int:index>")
+def getBy_index(index):
+
+    """
+    Retorna linha de indice tal
+    :param int index:
+    :return:
+    """
+    with engine.connect() as connection:
+        response = connection.execute(f"SELECT x.* FROM imoveis x WHERE x.\"index\" =100;").fetchall()
+        response = [{columns[i]: line[i] for i in range(len(line))} for line in response]
+
+    return jsonify(response[0])
+
+
 
 if __name__ == "__main__":
     app.run(host = 'localhost', port = 7000, debug = False)
