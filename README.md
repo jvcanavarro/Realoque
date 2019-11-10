@@ -1,4 +1,5 @@
 # HackSerpro: Inteligência Superficial
+![Realoque](/web/assets/imagens/realoque.png)
 
 ## Realoque: Conectando quem tem à quem precisa
 
@@ -37,3 +38,4 @@ buscando sempre abstrair a burocracia inerente a esse tipo de transação.
 * Combinação dos Datasets: como encontrar o preço do m² de uma região de São Paulo?
 * Desenvolvimento da API e Web
 * Criação da documentação e apresentação para _pitch_.
+* Inicialização de um protótipo de aplicativo Android para acesso aos dados da API
