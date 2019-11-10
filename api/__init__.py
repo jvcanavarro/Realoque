@@ -41,7 +41,7 @@ def getBy_bairro(bairro):
     """
     
     with engine.connect() as connection:
-        response = connection.execute("SELECT x.* FROM imoveis x WHERE x.\"bairro\" = 'CENTRO';").fetchall()
+        response = connection.execute(f"SELECT x.* FROM imoveis x WHERE x.\"bairro\" = '{bairro}';").fetchall()
         response = [{columns[i]: line[i] for i in range(len(line))} for line in response]
 
     return jsonify(response)
