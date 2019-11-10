@@ -1,9 +1,9 @@
 # HackSerpro: Inteligência Superficial
-![Realoque](/web/assets/imagens/realoque.png)
+![Realoque](/web/assets/imagens/realoque_black.png)
 
 ## Realoque: Conectando quem tem à quem precisa
 
-![Web](/imgs/website.jpg)
+![Web](/imgs/website_black.png)
 
 Uma plataforma especializada para intermediar a venda e aluguel de imóveis de forma transparente, simplificada, eficiente e segura que busca atender a:
 
