@@ -3,10 +3,12 @@ Base da API
 """
 
 from flask import Flask, jsonify
+from flask_cors import CORS
 from sqlalchemy import create_engine
 import pandas as pd
 
 app = Flask(__name__)
+CORS(app)
 data = pd.read_csv('D:/igor/OneDrive/Documentos/GitHub/serpro/HackSerpro/datasets/imoveis/imoveis_final_bairro_merged'
                    '.csv',sep=";", encoding="unicode_escape")
 engine = create_engine('postgresql://equipe215:ZXF1aXBlMjE1QHNlcnBybw@bd.inova.serpro.gov.br:5432/equipe215')

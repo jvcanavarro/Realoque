@@ -17,7 +17,39 @@ select{
 
     padding: 10px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
+    display: inline-block;
+    float: left;
 
+    vertical-align: middle;
 
+}
+
+select:focus{
+    outline: none;
+}
+
+#busca{
+
+    background-color: #4196e1;
+    color: white;
+
+    display: inline-block;
+    
+    height: 37px;
+    width: 40px;
+    border-radius: 0 10px 10px 0  ;
+    border: none;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    opacity: .9;
 }
