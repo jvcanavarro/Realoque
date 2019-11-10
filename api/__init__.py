@@ -31,6 +31,19 @@ def get_bairros():
 
     return jsonify([line[0] for line in response])
 
+@app.route("/all")
+def get_all():
+
+    """
+    Retorna todos
+    :return:
+    """
+    with engine.connect() as connection:
+        response = connection.execute(f"SELECT * FROM imoveis;").fetchall()
+        response = [{columns[i]: line[i] for i in range(len(line))} for line in response]
+
+    return jsonify(response)
+
 @app.route("/bairro/<string:bairro>")
 def getBy_bairro(bairro):
 
@@ -46,15 +59,23 @@ def getBy_bairro(bairro):
 
     return jsonify(response)
 
-@app.route("/valor/<float:valor>")
+@app.route("/valor/<int:valor>")
 def getBy_valor(valor):
 
     """
     Retorna os imóveis disponíveis de acordo com o valor
-    :param valor:
+    :param int valor:
     :return:
     """
 
+    limite_inferior = valor * 0.2
+    limite_superior = limite_inferior + .2
+
+    with engine.connect() as connection:
+        response = connection.execute(f"SELECT x.* FROM imoveis x WHERE x.\"normal_value_terreno\" <= {limite_superior} AND x.\"normal_value_terreno\" > {limite_inferior};").fetchall()
+        response = [{columns[i]: line[i] for i in range(len(line))} for line in response]
+
+    return jsonify(response)
 
 if __name__ == "__main__":
     app.run(host = 'localhost', port = 7000, debug = False)
