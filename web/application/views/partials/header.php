@@ -20,7 +20,7 @@
 			<div class="inner">
 				<div class="left">
 
-					<h1>Realoque</h1>
+					<a href="<?php echo base_url()?>"><img src="<?php echo base_url('assets/imagens/realoque.png')?>" alt=""></a>
 					<h3>Slogan maneiro</h3>
 
 				</div>

@@ -1,8 +1,12 @@
 header{
-    background-color: #4196e1;
+    background-color: black;
     color: white;
-    margin-top: -20px;
-    padding-top: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    height: 80px;
 }
 
 header h1{
@@ -18,12 +22,14 @@ header h3{
     font-size: 11pt;
     font-weight: bolder;
     vertical-align: middle;
+    margin-top: -7px;
+    margin-left: 20px;
 }
 
 header .right{
     display: block;
     float: right;
-    margin-top: -60px;
+    margin-top: -40px;
 }
 
 header button{
@@ -39,4 +45,9 @@ header button{
 
 .login{
     border: 2px solid white;    
+}
+
+header img{
+    width: 150px;
+    margin-top: 25px;
 }

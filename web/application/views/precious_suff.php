@@ -39,5 +39,5 @@
 		});
 	}
     </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2vox7tWi6HYRBYMvsMglemfdoDImLRUQ&callback=initMap"
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2vox7tWi6HYRBYMvsMglemfdoDImLRUQ"
     async defer></script>

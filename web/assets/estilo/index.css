@@ -1,15 +1,35 @@
 .search-containner{
 
     display: block;
-    margin: 0 auto 0 auto;
+    margin: 0 ;
+    height: 100px;
+    background-color: rgba(1, 1, 1, .8);
+    width: 450px;
+    padding: 30px;
     
+}
+
+.search-containner h2{
+    color: white !important;
+}
+
+.back{
+    background-image: url(../imgs/predius.jpg);
+    background-size: 120%;
+    background-attachment: fixed;
+}
+
+.back .inner{
+    padding-top: 150px;
+    height: 300px;
 }
 
 .home h2{
 
     color: gray;
     font-weight: lighter;
-    margin-top: 50px;
+    margin-top: 0px;
+    padding-top: 10px;
 
 }
 
@@ -31,7 +51,7 @@ select:focus{
 
 #busca{
 
-    background-color: #4196e1;
+    background-color: rgba(0, 0, 0, 0);
     color: white;
 
     display: inline-block;
@@ -52,4 +72,8 @@ button:hover{
 
 button:active{
     opacity: .9;
+}
+
+.trending{
+    margin-top: 40px;
 }

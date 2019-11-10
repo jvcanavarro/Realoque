@@ -36,13 +36,18 @@ class Realoque extends CI_Controller
 
 	public function sample(){
 
-		$this->render('sample', []);
+		$data["index"] = $this->uri->segment(2);
+		
+
+		$this->render('sample', $data);
 
 	}
 
 	public function lista(){
 
 		$data['bairro'] = $this->uri->segment(2);
+
+		$data = str_replace("%20", " ", $data);
 
 		$this->render('lista', $data);
 		

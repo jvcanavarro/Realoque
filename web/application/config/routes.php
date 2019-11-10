@@ -53,5 +53,5 @@ $route['default_controller'] = 'realoque';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['sample'] = 'realoque/sample';
+$route['sample/(:num)'] = 'realoque/sample/$1';
 $route['lista/(:any)'] = 'realoque/lista/$1';

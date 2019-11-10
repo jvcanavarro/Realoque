@@ -1,0 +1,67 @@
+.imovel h2{
+
+    color: white;
+    font-weight: lighter;
+    font-size: 20pt;
+    padding-top: 0;
+    margin: 0;
+
+}
+
+.imovel h3{
+    margin: 10px 0 0 0  ;
+    font-weight: bolder;
+    font-size: 12pt;
+}
+
+.imovel{
+    padding: 20px;
+    background-color: rgba(0,0,0,.7);
+    color: white;
+    box-shadow: 0 0 5px gray;
+    margin-top: 15px;
+}
+
+.casinha{
+    display: block;
+    float: left;
+    font-size: 37pt;
+    margin-right: 20px;
+    margin-top: 5px;
+    color: rgba(0,0,0,.3);
+    padding-bottom: 20px;
+}
+
+h5{
+    font-weight: lighter;
+    color: black;
+    font-size: 20pt;
+}
+
+#cifras{
+    display: block;
+    float: right;
+
+    margin-top: -70px;
+}
+
+.cifra{
+
+    font-size: 18pt;
+    margin-left: 10px;
+    padding: 5px;
+
+}
+
+.cifra:hover{
+    cursor: pointer;
+}
+
+.cifra.off{
+    font-weight: lighter;
+    color: gray;
+}
+
+.cifra.on{
+    font-weight: bolder;
+}

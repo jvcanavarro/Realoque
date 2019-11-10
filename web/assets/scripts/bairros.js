@@ -26,7 +26,7 @@ $.ajax({
 })
 
 
-function lista(){
+function lista_bairro(){
 
     window.location.href = base + 'lista/' + selectInput.value
     
