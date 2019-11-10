@@ -1,0 +1,36 @@
+#:kivy 1.0.9
+
+<RealoqueWid>:    
+    canvas:
+        Rectangle:
+            pos: 0, self.height * 8/9 
+            size: self.width, 1
+        Rectangle:
+            pos: self.center_x - self.width / 5, self.center_y * 1.15
+            size: self.width / 2.5 ,200
+    Image:
+        source: '../web/assets/imagens/realoque.png'
+        center_x: root.width / 9
+        top: root.top + 35
+        size: 150, 200
+
+    Button:
+        background_normal: ''
+        background_color: 1, .9, 11, .6
+        size_hint: None, None
+        size: 100, 44
+        font_size: 15
+        center_x: root.width * 6 / 8 + 25
+        top: root.top - 40
+        text: 'Login'
+
+    Button:
+        background_normal: ''
+        background_color: 1, .9, 11, .6
+        size_hint: None, None
+        size: 100, 44
+        font_size: 15
+        center_x: root.width * 7 / 8 + 10
+        top: root.top - 40
+        text: 'Cadastre-se'
+
