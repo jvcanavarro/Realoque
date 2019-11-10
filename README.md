@@ -1,10 +1,8 @@
-#HackSerpro: Inteligência Superficial
+# HackSerpro: Inteligência Superficial
 
-![Logo](/web/assets/imagens/realoque.png)
+## Realoque: Conectando quem tem à quem precisa
 
-## Realoque: Conectando quem tem à quem precisa.
-
-![Web](/imgs/website.png)
+![Web](/imgs/website.jpg)
 
 Uma plataforma especializada para intermediar a venda e aluguel de imóveis de forma transparente, simplificada, eficiente e segura que busca atender a:
 
@@ -14,3 +12,28 @@ Uma plataforma especializada para intermediar a venda e aluguel de imóveis de f
 
 buscando sempre abstrair a burocracia inerente a esse tipo de transação.
 
+# Tecnologias e Recursos
+
+### Python
+* Data Science: Pandas & Matplotlib, Jupyter.
+* API: Flask.
+* Database: SQLAlchemy.
+
+### PHP
+* Web: Code Igniter.
+
+### Resources
+* Google Places Library.
+
+### Database
+* Server: PostgreSQL
+* Client: DBeaver.
+* Datasets: SIAPA & IPTU São Paulo.
+
+# Flow
+
+* Análise dos Dados: exploração dos datasets para desenvolvimento de _insights_.
+* Visualização e Entendimento dos Dados: união dos dois datasets.
+* Combinação dos Datasets: como encontrar o preço do m² de uma região de São Paulo?
+* Desenvolvimento da API e Web
+* Criação da documentação e apresentação para _pitch_.
