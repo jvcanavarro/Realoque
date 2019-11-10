@@ -3,11 +3,18 @@ Base da API
 """
 
 from flask import Flask, jsonify
+from sqlalchemy import create_engine
 import pandas as pd
 
 app = Flask(__name__)
-data = pd.read_csv('/home/tubs/HackSerpro/datasets/imoveis/imoveis_final.csv',sep=";", encoding="unicode_escape")
+data = pd.read_csv('D:/igor/OneDrive/Documentos/GitHub/serpro/HackSerpro/datasets/imoveis/imoveis_final_bairro_merged'
+                   '.csv',sep=";", encoding="unicode_escape")
+engine = create_engine('postgresql://equipe215:ZXF1aXBlMjE1QHNlcnBybw@bd.inova.serpro.gov.br:5432/equipe215')
 
+with engine.connect() as connection:
+    columns = connection.execute("SELECT column_name FROM information_schema.columns WHERE table_name='imoveis';")
+    columns = columns.fetchall()
+    columns = [column[0] for column in columns]
 
 @app.route("/bairros")
 def get_bairros():
@@ -16,11 +23,12 @@ def get_bairros():
     Retorna os bairros com valores disponíveis
     :return:
     """
+    with engine.connect() as connection:
+        response = connection.execute("SELECT DISTINCT x.\"Bairro\" FROM imoveis x ORDER BY x.\"Bairro\";")
 
-    l = list(data['Bairro'].values)
-    l = list(dict.fromkeys(sorted(l)))
+    connection.close()
 
-    return jsonify(l)
+    return jsonify([line[0] for line in response])
 
 @app.route("/bairro/<string:bairro>")
 def getBy_bairro(bairro):
@@ -30,16 +38,10 @@ def getBy_bairro(bairro):
     :param str bairro:
     :return:
     """
-
-    print(bairro)
-
-    response = []
-
-    for i in data[data["Bairro"] == bairro].iterrows():
-
-        response.append(i[1].to_json())
-
-    print(response)
+    
+    with engine.connect() as connection:
+        response = connection.execute("SELECT x.* FROM imoveis x WHERE x.\"Bairro\" = 'CENTRO';").fetchall()
+        response = [{columns[i]: line[i] for i in range(len(line))} for line in response]
 
     return jsonify(response)
 
