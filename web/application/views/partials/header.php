@@ -25,6 +25,7 @@
 
 				</div>
 				<div class="right">
+					<a href="<?php echo base_url("metricas")?>">Métricas</a>
 					<button class ='login'>Login</button>
 					<button class ='cas'>Cadastre-se</button>
 				</div>

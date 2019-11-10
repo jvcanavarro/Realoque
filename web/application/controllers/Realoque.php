@@ -54,4 +54,11 @@ class Realoque extends CI_Controller
 
 	}
 
+	public function metricas(){
+
+		$this->render('metricas', []);
+
+	}
+
+
 }

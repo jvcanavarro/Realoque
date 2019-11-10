@@ -55,3 +55,4 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['sample/(:num)'] = 'realoque/sample/$1';
 $route['lista/(:any)'] = 'realoque/lista/$1';
+$route['metricas'] = 'realoque/metricas';

@@ -1,0 +1,1 @@
+<iframe src="https://inteligenciasuperficial.us.qlikcloud.com/single/?appid=60cbb2aa-1178-41a5-a691-2f59578826c2&sheet=5e2f9018-ab47-4486-a607-a984f154d698&opt=ctxmenu,currsel" style="border:none;width:100vw;height:100vh;"></iframe>
