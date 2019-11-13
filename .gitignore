@@ -8,3 +8,5 @@ datasets/iptu-sp/IPTU_Part_05_750K.csv
 **-checkpoint.**
 datasets/iptu-sp/iptu.csv
 datasets/imoveis/.vscode
+video/pitch_realoque.mp4
+datasets/etc/imoveis_uniao_csv.CSV
